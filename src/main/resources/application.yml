@@ -1,0 +1,25 @@
+server:
+  port: 9091
+
+spring:
+  application:
+    name: CLOUD-GETWAY
+#cloud:
+#  gateway:
+#    routes:
+#      -id: user-service
+#      -uri: lb://user-service
+#      predicates:
+#        -Path=/users/**
+#       diaganaspring
+#      uri: lb://diaganaspring
+#
+#        -Path=/etudiants/**
+ eureka:
+      client:
+      register-with-eureka: true
+      fetch-registry: true
+      service-url:
+        defaultZone: http://localhost:8761/eureka/
+      instance:
+        hostname: localhost
